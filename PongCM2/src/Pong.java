@@ -13,11 +13,10 @@ public class Pong extends JFrame
 		setResizable(false);
 		setVisible(true);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
-		add(new PongPanel());
 	}
 	
 	public static void main(String[] args)
 	{
-		new Pong();
+		new Pong().add(new PongPanel());
 	}
 }
